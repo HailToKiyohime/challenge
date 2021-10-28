@@ -24,9 +24,9 @@ public class Enemy:MonoBehaviour
         Small small = (Small)sizeFactory.GetMonster((int)Size.Small).DateItem;
         small.GetInfo();
 
-        GameObject monster = GameObject.CreatePrimitive(cube.GetInfo());
+        GameObject monster = GameObject.CreatePrimitive(sphere.GetInfo());
         monster.transform.position = new Vector3(0, 1.5f, 0);
-        float size = big.GetInfo();
+        float size = medium.GetInfo();
         monster.transform.localScale = new Vector3(size,size,size);
     }
     class MonsterFactoryDateItem
